@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct WisprActionsChallangeApp: App {
+    private let builder = AppBuilder(environment: .prod)
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            builder.makeInitialView()
         }
     }
 }
